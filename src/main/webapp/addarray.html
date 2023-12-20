@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Data Structure Algorithms Sorting Comparison</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        ul {
+			margin: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #ADB5BD;
+           
+            width: 100%;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        h2 {
+			text-align: left;
+			margin: 20px;
+		}
+		  h3 {
+			text-align: left;
+			margin: 20px;
+		}
+
+        #arrayForm {
+            padding: 20px;
+            background-color: #CED4DA;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #6C757D;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #343A40;
+        }
+       
+		 p {
+			text-align: left;
+			 line-height: 1.5;
+			margin: 20px;
+		}
+		h3 {
+			text-align: left;
+			margin: 20px;
+		}
+	
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+            <li><a href="input.html">Sorting Algorithms</a></li>
+            <li><a href="inputsearch.html">Searching Algorithms</a></li>
+            <li><a href="arrayopt.html">Array Operations</a></li>
+            <li><a href="learnDSA.html">Learn Data Structure Algorithm</a></li>
+             <li><a href="Java_Quiz.jsp">DSA Quiz</a></li>
+              <li><a href="About.jsp">About</a></li>
+              
+        </ul>
+    </div>
+    <h2>Enter an Array:</h2>
+    <form action="add" method="post" id="arrayForm">
+        <input type="text" id="arrayInput" name="arrayInput" placeholder="Enter comma-separated values">
+        <label for="targetInput">Enter element:</label>
+        <input type="text" id="targetInput" name="targetInput" class="input-field" required>
+        <br>
+        <label for="targetindex">Enter target index:</label>
+        <input type="text" id="targetindex" name="targetindex" class="input-field" required>
+        <input type="submit" value="Submit">
+    </form>
+    
+    <div class="info">
+			<h3>Adding Element to Array and ArrayList: </h3>
+    <p>
+        To add an element to an array, you check the index bounds and then assign the new value to the specified index. For example:
+        <code>myArray[2] = newValue;</code>
+    </p>
+    <p>
+        To add an element to an ArrayList, use the <code>add()</code> method with the specified index to insert a new element. For example:
+        <code>myArrayList.add(2, newValue);</code>
+    </p>
+
+
+   </div>
+</body>
+  </html>

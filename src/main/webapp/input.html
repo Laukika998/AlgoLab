@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Structure Algorithms Sorting Comparison</title>
+    <style>
+       body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        ul {
+			margin: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #ADB5BD;
+           
+            width: 100%;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        h2 {
+			text-align: left;
+			margin: 20px;
+		}
+
+        #arrayForm {
+            padding: 20px;
+            background-color: #CED4DA;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+          input[type="submit"] {
+            background-color: #6C757D;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #343A40;
+        }
+         p {
+			text-align: left;
+			 line-height: 1.5;
+			margin: 20px;
+		}
+		h3 {
+			text-align: left;
+			margin: 20px;
+		}
+		h4 {
+			text-align: left;
+			margin: 20px;
+		}
+     </style>
+</head>
+<body>
+	 <div class="nav">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="input.html">Sorting Algorithms</a></li>
+            <li><a href="inputsearch.html">Searching Algorithms</a></li>
+            <li><a href="arrayopt.html">Array Operations</a></li>
+            <li><a href="learnDSA.html">Learn Data Structure Algorithm</a></li>
+             <li><a href="Java_Quiz.jsp">DSA Quiz</a></li>
+              <li><a href="About.jsp">About</a></li>
+              
+                                 
+        </ul>
+    </div>
+	
+    <h2>Enter an Array:</h2>
+    <form action="sorting" method="post" id="arrayForm">
+        <input type="text" id="arrayInput" name="arrayInput" placeholder="Enter comma-separated values">
+        <input type="submit" value="Submit">
+    </form>
+    <div>
+		<h2> Sorting in Array</h2>
+		<p>
+			Sorting is the process of arranging the elements of an array or a list in a specific order, typically in ascending or descending order. 
+			Sorting is a fundamental operation in computer science and plays a crucial role in various applications and algorithms.
+		</p>
+		<h3><a href="bubblesort.html">
+			1.Bubble Sort:
+			</a>
+		</h3>
+		<p>
+			Bubble Sort is a simple comparison-based sorting algorithm.<br>
+It repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.<br>
+The pass through the list is repeated until no swaps are needed, indicating that the list is sorted.
+		</p>
+		<h4>Complexity:</h4>
+		<p>
+			Time Complexity: O(n^2) in the worst case.<br>
+Space Complexity: O(1) as it requires only a constant amount of additional memory.
+		</p>
+		<h3><a href="selectionsort.html">2.Selection Sort:</a></h3>
+		<p>
+			Selection Sort is another simple comparison-based sorting algorithm.<br>
+It divides the list into a sorted and an unsorted region.<br>
+In each iteration, it finds the minimum (or maximum) element from the unsorted region and swaps it with the first unsorted element.
+		</p>
+		<h4>Complexity:</h4>
+		<p> 
+			Time Complexity: O(n^2) in the worst case.<br>
+Space Complexity: O(1) as it requires only a constant amount of additional memory.
+		</p>
+		<h3><a href="insertionsort.html">3.Insertion Sort:</a></h3>
+		<p>
+			Insertion Sort builds the sorted array one element at a time.<br>
+It takes each element from the unsorted part and inserts it into its correct position in the sorted part.<br>
+It's efficient for small datasets or nearly sorted data.
+		</p>
+		<h4>Complexity:</h4>
+		<p>
+			Time Complexity: O(n^2) in the worst case.<br>
+Space Complexity: O(1) as it requires only a constant amount of additional memory.
+		</p>
+		<h3><a href="mergesort.html">4.Merge Sort:</a></h3>
+		<p>
+			Merge Sort is a comparison-based, divide-and-conquer algorithm.<br>
+It divides the array into two halves, sorts each half, and then merges them back together.<br>
+It guarantees a time complexity of O(n log n) but requires additional space for merging.
+		</p>
+		<h4>Complexity:</h4>
+		<p>
+			Time Complexity: O(n log n) in all cases.<br>
+Space Complexity: O(n) additional space for merging.
+		</p>
+		
+		<h3><a href="quicksort.html">5.Quick Sort:</a></h3>
+		<p>
+			Quick Sort is a comparison-based, divide-and-conquer algorithm.<br>
+It selects a 'pivot' element and partitions the other elements into two sub-arrays according to whether they are less than or greater than the pivot.<br>
+It then recursively sorts the sub-arrays.
+		</p>
+		<h4>Complexity:</h4>
+		<p>
+			Time Complexity: O(n^2) in the worst case, but O(n log n) on average.<br>
+Space Complexity: O(log n) for the recursive call stack.
+		</p>
+		<h3><a href="radixsort.html">6.Radix Sort:</a></h3>
+		<p>
+			Radix Sort is a non-comparison, linear time sorting algorithm.<br>
+It distributes elements into buckets based on their individual digits.<br>
+It performs this distribution for each digit, from the least significant to the most significant.
+		</p>
+		<h4>Complexity:</h4>
+		<p>
+			Time Complexity: O(nk) where n is the number of elements and k is the number of digits in the longest number.<br>
+Space Complexity: O(n + k) for the buckets.
+		</p>
+	</div>
+   
+</body>
+</html>

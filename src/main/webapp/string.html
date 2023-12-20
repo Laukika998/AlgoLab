@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Data Structure</title>
+    <style>
+        body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    overflow: hidden;
+    
+    background-color: #ADB5BD;
+    border-radius: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Add margin to the content to avoid overlapping with fixed navbar */
+.info {
+    margin-top: 65px;
+}
+
+/* Add a background color to the active link */
+.nav li a.active {
+    background-color: #343A40;
+    color: white;
+}
+        h2 {
+			margin-top: 30px;
+			margin-left: 300px;
+			text-align: left;
+		}
+		p {
+		
+			margin-left: 300px;
+			text-align: left;
+			line-height: 1.5;
+		}
+         img {
+			 margin-left: 400px;
+		 }
+		 h3 {
+		
+			margin-left: 300px;
+			text-align: left;
+		
+		}
+		 h4 {
+		
+			margin-left: 300px;
+			text-align: left;
+		
+		}
+
+        
+
+        /* Sidebar styles */
+        .sidebar {
+		
+            width: 250px;
+            height: 100%;
+            background-color: #6C757D;
+            padding-top: 20px;
+            position: fixed;
+            border-radius: 10px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 16px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .sidebar a:hover {
+            background-color: #343A40;
+        }
+    </style>
+</head>
+<body>
+
+  
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="learnDSA.html">Data Structure</a>
+        <a href="learnarray.html">Array Data Structure</a>
+        <a href="string.html">String Data Structure</a>
+        <a href="linkedlist.html">Linked List Data Structure</a>
+        <a href="stack.html">Stack Data Structure</a>
+        <a href="queue.html">Queue Data Structure</a>
+         <a href="tree.html">Tree Data Structure</a>
+          <a href="graph.html">Graph Data Structure</a>
+    </div>
+
+    <!-- Content -->
+    <div class="nav">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="input.html">Sorting Algorithms</a></li>
+            <li><a href="inputsearch.html">Searching Algorithms</a></li>
+            <li><a href="arrayopt.html">Array Operations</a></li>
+            <li><a href="learnDSA.html">Learn Data Structure Algorithm</a></li>
+             <li><a href="Java_Quiz.jsp">DSA Quiz</a></li>
+              <li><a href="About.jsp">About</a></li>
+              
+        </ul>
+    </div>
+
+    <div class="info">
+		<h2><strong>String Data Structure</strong></h2>
+		<p>
+			Strings are considered a data type in general and are typically represented as arrays of bytes (or words) that store a sequence of characters. Strings are defined as an array of characters. The difference between a character array and a string is the string is terminated with a special character ‘\0’
+		</p>
+		<p>
+			Java does not have a primitive type for String. It has actually a class.		</p>
+			<p>
+				In Java, string is basically an object that represents sequence of char values. An array of characters works same as Java string. For example:
+			</p>
+			<p>
+				char[] ch={'j','a','v','a','t','p','o','i','n','t'};<br>
+String s=new String(ch);  
+			</p>
+			<p>
+				is same as:
+			</p>
+			<p>
+				String s="javatpoint";  
+			</p>
+			<p>
+				Java String class provides a lot of methods to perform operations on strings such as compare(), concat(), equals(), split(), length(), replace(), compareTo(), intern(), substring() etc.
+			</p>
+			<p>
+				The java.lang.String class implements Serializable, Comparable and CharSequence interfaces.
+			</p>
+			<h2><strong>StringBuilder Class in Java:</strong></h2>
+			<p>
+				StringBuilder in Java represents a mutable sequence of characters. Since the String Class in Java creates an immutable sequence of characters, the StringBuilder class provides an alternative to String Class, as it creates a mutable sequence of characters. The function of StringBuilder is very much similar to the StringBuffer class, as both of them provide an alternative to String Class by making a mutable sequence of characters. However, the StringBuilder class differs from the StringBuffer class on the basis of synchronization. The StringBuilder class provides no guarantee of synchronization whereas the StringBuffer class does. Therefore this class is designed for use as a drop-in replacement for StringBuffer in places where the StringBuffer was being used by a single thread (as is generally the case). Where possible, it is recommended that this class be used in preference to StringBuffer as it will be faster under most implementations. Instances of StringBuilder are not safe for use by multiple threads. If such synchronization is required then it is recommended that StringBuffer be used. String Builder is not thread-safe and high in performance compared to String buffer.
+			</p>
+			<h3><strong>The class hierarchy is as follows:</strong></h3>
+			<p>
+				java.lang.Object --> java.lang --> Class StringBuilder
+			</p>
+			<h3><strong>Syntax:</strong></h3>
+			<p>
+				public final class StringBuilder<br>
+    extends Object<br>
+    implements Serializable, CharSequence<br>
+			</p>
+    </div>
+</body>
+</html>

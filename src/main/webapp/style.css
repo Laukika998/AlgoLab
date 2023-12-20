@@ -1,0 +1,46 @@
+*{ margin: 0; padding: 0; }
+body{ 
+    
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+h2 {
+	padding: 10px;
+	background-color: #CED4DA;
+	border-radius: 10px;
+    margin: 25px 0; 
+    font: 45px Georgia, Serif; 
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: black;
+    
+}
+
+#quiz input {
+    vertical-align: middle;
+}
+
+#quiz ol {
+   margin: 0 0 10px 20px;
+}
+
+#quiz ol li {
+   margin: 0 0 20px 0;
+}
+
+#quiz ol li div {
+   padding: 4px 0;
+}
+
+#quiz h3 {
+   font-size: 17px; margin: 0 0 1px 0; color: black;
+}
+
+#results {
+    font: 44px Georgia, Serif;
+}
+

@@ -1,0 +1,189 @@
+/* Global Styles */
+ body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        ul {
+			position: fixed;
+			margin: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #343A40 ;
+           
+            width: 100%;
+        }
+
+        li {
+            float: left;
+            
+        }
+        li strong {
+			float: left;
+			 color: white;
+            text-align: center;
+            padding: 14px 110px;
+            text-decoration: none;
+			
+		}
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+
+
+/* Hero Section */
+/* Centered Content */
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.centered-content h1 {
+	color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.centered-content p {
+	color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+
+/* Hero Section */
+/* Centered Content */
+.centered-content {
+    text-align: left;
+}
+
+.centered-content h1 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.centered-content p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Hero Section */
+.hero {
+    background-color:  #ADB5BD;
+    border-radius: 10px;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding: 150px;
+    background-color: #343A40;
+    border-radius: 10px;
+}
+
+/* CSS */
+.button {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.get-started-btn {
+    background-color: #6C757D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.get-started-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.get-started-btn:hover {
+    background-color: #ADB5BD;
+}
+
+
+
+
+/* Feature Containers */
+.features {
+	background-color: #CED4DA;
+	border-radius: 10px;
+}
+.feature-container {
+	margin: 20px;
+	border-radius: 10px;
+    background-color: #343A40; /* Light grey background color */
+    padding: 50px; /* Add padding to the containers */
+    border-radius: 10px; /* Add rounded corners to the containers */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+    margin-bottom: 20px; /* Add margin between containers */
+}
+
+
+.feature-container h2 {
+	
+	 color: white;
+    font-size: 24px; /* Heading font size */
+    margin-bottom: 10px; /* Bottom margin for the heading */
+}
+
+.feature-container p {
+	 color: white;
+    font-size: 16px; /* Paragraph font size */
+
+}
+
+.feature-container:hover {
+    background-color: #ADB5BD; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 767px) {
+    .feature-container {
+        margin-bottom: 30px; /* Increase margin between containers on small screens */
+    }
+}
+
+
+
+/* Footer Section */
+.footer {
+    background-color:  #212529;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+h1 {
+	color: white;
+}
+p {
+	color: white;
+}
